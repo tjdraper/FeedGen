@@ -1,0 +1,12 @@
+{
+	"schema_version": "1.0",
+	"name" : "feedgen",
+	"label": "FeedGen",
+	"version": "0.0.5",
+	"types": ["plugin"],
+	"paths": {
+		"system": [
+			"system/expressionengine/third_party/feedgen"
+		]
+	}
+}
