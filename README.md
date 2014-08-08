@@ -1,3 +1,3 @@
-# Coming Soon
+# Beta
 
-If you're adventurous, check out the development branch.
+This is the beta development branch.
