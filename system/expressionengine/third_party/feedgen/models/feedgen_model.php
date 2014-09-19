@@ -154,6 +154,15 @@ class Feedgen_model extends CI_Model {
 			);
 		}
 
+		// Encode Special Characters
+		foreach ($returnData as $key => $value) {
+			foreach ($value as $subKey => $subValue) {
+				if ($subKey == 'title' or $subKey == 'content') {
+					$returnData[$key][$subKey] = htmlspecialchars($subValue);
+				}
+			}
+		}
+
 		return $returnData;
 	}
 

@@ -23,10 +23,10 @@ class Feedgen {
 
 	// Set typography prefs for parsing file fields
 	public $typographyPrefs = array(
-	    'text_format' => 'none',
-	    'html_format' => 'all',
-	    'auto_links' => 'n',
-	    'allow_img_url' => 'y'
+		'text_format' => 'none',
+		'html_format' => 'all',
+		'auto_links' => 'n',
+		'allow_img_url' => 'y'
 	);
 
 	public function __construct()
