@@ -23,10 +23,10 @@ class Feedgen {
 
 	// Set typography prefs for parsing file fields
 	public $typographyPrefs = array(
-		'text_format' => 'none',
-		'html_format' => 'all',
-		'auto_links' => 'n',
-		'allow_img_url' => 'y'
+	    'text_format' => 'none',
+	    'html_format' => 'all',
+	    'auto_links' => 'n',
+	    'allow_img_url' => 'y'
 	);
 
 	public function __construct()
@@ -42,9 +42,9 @@ class Feedgen {
 
 		$this->channel = ee()->TMPL->fetch_param('channel');
 
-		$this->channel_id = ee()->feedgen_model->getChannelInfo(
-			$this->channel
-		)['channel_id'];
+		$channel_info = ee()->feedgen_model->getChannelInfo($this->channel);
+
+		$this->channel_id = $channel_info['channel_id'];
 
 		$this->status = ee()->TMPL->fetch_param('status', 'open');
 
